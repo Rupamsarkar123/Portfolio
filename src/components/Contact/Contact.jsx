@@ -46,7 +46,7 @@ export const Contact = () => {
       }
     } catch (error) {
       console.error("Error submitting form:", error);
-      toast.error("⚠️ Something went wrong. Please try again.", {
+      toast.error(" Something went wrong. Please try again.", {
         position: "top-center",
         autoClose: 3000,
       });
