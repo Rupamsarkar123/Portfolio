@@ -8,8 +8,9 @@ dotenv.config();
 const app = express();
 
 const corsOptions = {
-  origin: "*", // Allow requests from your frontend
-  methods: "GET,POST",
+  origin: "http://localhost:5173",
+  methods: ["GET", "POST", "OPTIONS"], // Allow OPTIONS method
+  allowedHeaders: ["Content-Type"], // Allow content-type header
 };
 
 app.use(cors(corsOptions));
@@ -18,10 +19,10 @@ app.use(express.json());
 
 // MySQL Connection
 const db = mysql.createConnection({
-  host: "localhost",
-  user: "root", // Change this if needed
-  password: "Rupam123@", // Change this if needed
-  database: "contact_db",
+  host: process.env.MYSQL_HOST,
+  user: process.env.MYSQL_USER,
+  password: process.env.MYSQL_PASSWORD,
+  database: process.env.MYSQL_DATABASE,
 });
 
 db.connect((err) => {
