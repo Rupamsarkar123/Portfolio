@@ -8,7 +8,7 @@ dotenv.config();
 const app = express();
 
 const corsOptions = {
-  origin: "http://localhost:5173",
+  origin: "https://rupams-portfolio.vercel.app",
   methods: ["GET", "POST", "OPTIONS"], // Allow OPTIONS method
   allowedHeaders: ["Content-Type"], // Allow content-type header
 };
