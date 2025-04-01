@@ -1,0 +1,196 @@
+@import "../../vars.css";
+
+.container {
+  color: var(--color-text);
+  margin-top: 100px;
+  background-color: var(--color-secondary);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  padding: 50px 10%;
+  gap: 50px;
+}
+
+/* Text Section */
+.text {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.text h2 {
+  font-size: 70px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+
+.text p {
+  font-size: 32px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  margin-bottom: 20px;
+}
+
+/* Social Media Links */
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+.links img {
+  width: 50px;
+  height: 50px;
+  border-radius: 20%;
+  transition: transform 0.2s ease-in-out;
+}
+
+.links img:hover {
+  transform: scale(1.1);
+}
+
+.gfgContainer {
+  background-color: white;
+  border-radius: 6px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+}
+
+.links img[alt="Email"] {
+  filter: invert(100%);
+}
+
+.contactForm {
+  flex: 1;
+  max-width: 550px;
+  max-height: 550px;
+  background: var(--color-primary);
+  padding: 35px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.contactForm h3 {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+/* Form Fields */
+.contactForm form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.inputField {
+  padding: 24px; /* Increased padding for height */
+  font-size: 18px; /* Slightly bigger font */
+  border: 2px solid var(--color-text);
+  border-radius: 14px; /* More rounded corners */
+  outline: none;
+  width: 85%; /* Slightly wider */
+  transition: all 0.3s ease-in-out;
+}
+
+.inputField:focus {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  transform: scale(1.02);
+}
+
+/* Submit Button */
+.submitButton {
+  width: 50%; /* Reduced width */
+  padding: 18px; /* Slightly adjusted padding */
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background: blue;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  align-self: center; /* Centers button in the form */
+}
+
+.contactDetails {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.phoneNumber {
+  margin: 5px 0;
+}
+
+.copyright {
+  margin: 5px 0;
+  font-size: 12px;
+  color: #aaa;
+}
+
+.submitButton:hover {
+  background: blue;
+  transform: scale(1.05); /* Slightly bigger on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+.submitButton:active {
+  transform: scale(0.98); /* Press effect */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Mobile Responsiveness */
+/* Mobile Responsiveness */
+@media screen and (max-width: 830px) {
+  .container {
+    flex-direction: column; /* Stack the content in a column on small screens */
+    padding: 30px 10%; /* Adjust padding for better spacing */
+  }
+
+  .text h2 {
+    font-size: 55px;
+  }
+
+  .text p {
+    font-size: 26px;
+  }
+
+  .links {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .contactForm {
+    width: 100%; /* Make the form take full width on small screens */
+    padding: 30px;
+    margin-top: 30px; /* Space between form and other content */
+  }
+
+  .inputField {
+    width: 100%;
+    padding: 22px;
+  }
+
+  .submitButton {
+    width: 80%; /* Wider button on mobile */
+  }
+}

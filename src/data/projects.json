@@ -1,0 +1,55 @@
+[
+  {
+    "title": "Sandesh - Chat website",
+    "imageSrc": "projects/sandesh.png",
+    "description": "Sandesh is a real-time chat application built using modern web technologies. It features instant messaging, user authentication, and seamless real-time communication.",
+    "skills": [
+      "ReactJS",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Vite",
+      "Nodemailer",
+      "Socket.io",
+      "JWT",
+      "Bcrypt",
+      "Cloudinary"
+    ],
+    "demo": "https://sandesh-s9we.onrender.com/",
+    "source": "https://github.com/Rupamsarkar123/Sandesh"
+  },
+  {
+    "title": "WeCare",
+    "imageSrc": "projects/project.png",
+    "description": "WeCare is a mental health tracking platform that enables continuous monitoring, identifies potential issues, and offers personalized recommendations for improvement. It is to support users with mental health guidance.",
+    "skills": [
+      "ReactJS",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Vite",
+      "Nodemailer"
+    ],
+    "demo": " https://wecare-website-1.onrender.com/",
+    "source": "https://github.com/nidafatma14/WeCare-website"
+  },
+  {
+    "title": "Pitchwave",
+    "imageSrc": "projects/pitch.png",
+    "description": "Pitchwave is a startup-investor pitching platform that connects entrepreneurs with potential investors. It provides a streamlined interface for startups to showcase their ideas and receive funding opportunities.",
+    "skills": [
+      "ReactJS",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Vite",
+      "SMTP",
+      "Multer",
+      "JWT",
+      "Bcrypt"
+    ],
+    "demo": "https://www.example.com",
+    "source": "https://github.com/Rupamsarkar123/Pitchwave"
+  }
+]
