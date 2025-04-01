@@ -8,7 +8,7 @@ dotenv.config();
 const app = express();
 
 const corsOptions = {
-  origin: "https://rupamsportfolio12.vercel.app", // Allow requests from your frontend
+  origin: "*", // Allow requests from your frontend
   methods: "GET,POST",
 };
 
