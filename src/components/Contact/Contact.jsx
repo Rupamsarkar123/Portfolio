@@ -40,7 +40,7 @@ export const Contact = () => {
         });
         setFormData({ name: "", email: "", phone: "" }); // Clear form
       } else {
-        toast.error("❌ Error: " + data.message, {
+        toast.error("Error: " + data.message, {
           position: "top-center",
           autoClose: 3000,
         });
