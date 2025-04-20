@@ -2,19 +2,33 @@ import express from "express";
 import mysql from "mysql2";
 import cors from "cors";
 import dotenv from "dotenv";
+import fs from "fs";
 
 dotenv.config();
 
 const app = express();
-app.use(cors());
+
+const corsOptions = {
+  origin: ["http://localhost:5173"],
+
+  methods: ["GET", "POST", "OPTIONS"], // Allow OPTIONS method
+  allowedHeaders: ["Content-Type"], // Allow content-type header
+};
+
+app.use(cors(corsOptions));
+
 app.use(express.json());
 
 // MySQL Connection
 const db = mysql.createConnection({
-  host: "localhost",
-  user: "root", // Change this if needed
-  password: "Rupam123@", // Change this if needed
-  database: "contact_db",
+  host: process.env.MYSQL_HOST,
+  port: process.env.MYSQL_PORT,
+  user: process.env.MYSQL_USER,
+  password: process.env.MYSQL_PASSWORD,
+  database: process.env.MYSQL_DATABASE,
+  ssl: {
+    ca: fs.readFileSync("ca-cert.pem"), // Path to your downloaded cert
+  },
 });
 
 db.connect((err) => {
@@ -44,26 +58,3 @@ const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`🚀 Server running on port ${PORT}`);
 });
-
-// import mysql from "mysql2";
-
-// // 1: To connect to MySQL server
-// const db = await mysql.createConnection({
-//   host: "localhost",
-//   user: "root",
-//   password: "Rupam123@",
-//   // database: "",
-// });
-
-// console.log("MySQL Connected Successfully :)");
-
-// db.query("SHOW DATABASES", (err, results) => {
-//   if (err) {
-//     console.error("Error fetching databases:", err);
-//     return;
-//   }
-//   console.log("Available Databases:", results);
-// });
-// // 2: Create a database (DB)
-// // 3: Create a table
-// // 4: Perform CRUD operations
