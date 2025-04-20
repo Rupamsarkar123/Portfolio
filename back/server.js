@@ -9,11 +9,14 @@ dotenv.config();
 const app = express();
 
 const corsOptions = {
-  origin: ["http://localhost:5173"],
-
-  methods: ["GET", "POST", "OPTIONS"], // Allow OPTIONS method
-  allowedHeaders: ["Content-Type"], // Allow content-type header
+  origin: [
+    "http://localhost:5173",
+    "https://portfolio-1-3b61.onrender.com" // ← Add this!
+  ],
+  methods: ["GET", "POST", "OPTIONS"],
+  allowedHeaders: ["Content-Type"],
 };
+
 
 app.use(cors(corsOptions));
 
