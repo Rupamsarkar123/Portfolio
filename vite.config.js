@@ -10,9 +10,11 @@ export default defineConfig({
   },
   server: {
     port: process.env.PORT || 5173,
-    host: true, // Allow access from Render or other external sources
+    host: true,
+    allowedHosts: ["portfolio-1-3b61.onrender.com"],
   },
 });
+
 
 // import { defineConfig } from "vite";
 // import react from "@vitejs/plugin-react";
