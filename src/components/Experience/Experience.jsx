@@ -8,7 +8,7 @@ import cssImg from "../../assets/skills/css.png";
 import reactImg from "../../assets/skills/react.png";
 import nodeImg from "../../assets/skills/node.png";
 import mongodbImg from "../../assets/skills/mongodb.png";
-import sqlImg from "../../assets/skills/mysql.png";
+import sqlImg from "../../assets/skills/my.png";
 import gitImg from "../../assets/skills/gitt.png";
 import expressImg from "../../assets/skills/expresss.png";
 import javaImg from "../../assets/skills/javaa.png";
@@ -21,7 +21,7 @@ const imageMap = {
   "skills/react.png": reactImg,
   "skills/node.png": nodeImg,
   "skills/mongodb.png": mongodbImg,
-  "skills/mysql.png": sqlImg,
+  "skills/my.png": sqlImg,
 
   "skills/gitt.png": gitImg,
   "skills/expresss.png": expressImg,
