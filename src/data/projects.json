@@ -1,5 +1,24 @@
 [
   {
+    "title": "DukaanSe - Ecommerce website",
+    "imageSrc": "projects/dukan.png",
+    "description": "Dukaanse is a full-stack e-commerce platform that simplifies online shopping .It includes essential e-commerce features like product management, secure payment integration, user authentication, and real-time notifications.",
+    "skills": [
+      "ReactJS",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Vite",
+      "Slugify",
+      "JWT",
+      "Bcrypt",
+      "BrainTree",
+      "Morgan"
+    ],
+    "demo": "https://dukaanse-1.onrender.com/",
+    "source": "https://github.com/Rupamsarkar123/DukaanSe"
+  },
+  {
     "title": "Sandesh - Chat website",
     "imageSrc": "projects/sandesh.png",
     "description": "Sandesh is a real-time chat application built using modern web technologies. It features instant messaging, user authentication, and seamless real-time communication.",
