@@ -4,15 +4,14 @@ import styles from "./ProjectCard.module.css";
 // Import project images directly
 import projectImg from "../../assets/projects/project.png";
 import sandImg from "../../assets/projects/sandesh.png";
-import dukanImg from "../../assets/projects/dukan.png"
+import dukanImg from "../../assets/projects/dukan.png";
 import pitchImg from "../../assets/projects/pitch.png";
 
 const imageMap = {
   "projects/project.png": projectImg,
   "projects/sandesh.png": sandImg,
   "projects/pitch.png": pitchImg,
-  "projects/dukan.png":dukanImg,
-
+  "projects/dukan.png": dukanImg,
 };
 
 export const ProjectCard = ({
