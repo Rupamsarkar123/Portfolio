@@ -11,7 +11,7 @@ export const Hero = () => {
         <h1 className={styles.title}>Hi, I'm Rupam Sarkar</h1>
         <p className={styles.description}>
           I'm a full-stack developer with 2 years of experience.
-          I'm currently a pre-final year B.Tech student in ECE and
+          I'm currently a final year B.Tech student in ECE and
           learning Java (DSA). I aim to build innovative solutions while
           continuously growing as a developer and problem-solver.
         </p>
