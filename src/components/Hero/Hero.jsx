@@ -10,8 +10,8 @@ export const Hero = () => {
       <div className={styles.content}>
         <h1 className={styles.title}>Hi, I'm Rupam Sarkar</h1>
         <p className={styles.description}>
-          I'm a full-stack developer with 2 years of experience using the MERN
-          stack. I'm currently a pre-final year B.Tech student in ECE and
+          I'm a full-stack developer with 2 years of experience.
+          I'm currently a pre-final year B.Tech student in ECE and
           learning Java (DSA). I aim to build innovative solutions while
           continuously growing as a developer and problem-solver.
         </p>
@@ -23,7 +23,7 @@ export const Hero = () => {
           </a>
 
           <a
-            href="https://drive.google.com/file/d/1obLyjjgMRKYiLp0gmI7TwNCmfJHtMm31/view?usp=sharing"
+            href="https://drive.google.com/file/d/1pHnqS80duubChV9oQWWn4_-k6UDyz5C5/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.downloadBtn}
