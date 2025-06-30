@@ -11,7 +11,7 @@ export default defineConfig({
   server: {
     port: process.env.PORT || 5173,
     host: true,
-    allowedHosts: ["portfolio-1-3b61.onrender.com"],
+    allowedHosts: ["https://portfolio-five-drab-79.vercel.app/"],
   },
 });
 
