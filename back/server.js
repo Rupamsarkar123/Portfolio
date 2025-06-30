@@ -11,7 +11,7 @@ const app = express();
 const corsOptions = {
   origin: [
     "http://localhost:5173",
-    "https://portfolio-five-drab-79.vercel.app/" // ← Add this!
+    "https://portfolio-five-drab-79.vercel.app" // ← Add this!
   ],
   methods: ["GET", "POST", "OPTIONS"],
   allowedHeaders: ["Content-Type"],
