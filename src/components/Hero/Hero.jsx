@@ -23,7 +23,7 @@ export const Hero = () => {
           </a>
 
           <a
-            href="https://drive.google.com/file/d/1pHnqS80duubChV9oQWWn4_-k6UDyz5C5/view?usp=sharing"
+            href="https://drive.google.com/file/d/1SXz7FC0MuOwhoCdjf2ReatuEPJ30CbjN/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.downloadBtn}
