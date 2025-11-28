@@ -10,10 +10,10 @@ export const Hero = () => {
       <div className={styles.content}>
         <h1 className={styles.title}>Hi, I'm Rupam Sarkar</h1>
         <p className={styles.description}>
-          I'm a full-stack developer with 2 years of experience.
-          I'm currently a final year B.Tech student in ECE and
-          learning Java (DSA). I aim to build innovative solutions while
-          continuously growing as a developer and problem-solver.
+          I'm a full-stack developer and a final-year B.Tech (ECE) student.
+          I’ve built real-world web applications using modern frontend and backend tools.
+          I have a solid understanding of Data Structures & Algorithms and enjoy solving problems,
+          designing clean user interfaces, and building scalable systems that make a real impact.
         </p>
 
         {/* Contact & Download CV Buttons */}
@@ -40,4 +40,5 @@ export const Hero = () => {
     </section>
   );
 };
+
 
