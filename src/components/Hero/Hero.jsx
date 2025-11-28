@@ -10,7 +10,7 @@ export const Hero = () => {
       <div className={styles.content}>
         <h1 className={styles.title}>Hi, I'm Rupam Sarkar</h1>
         <p className={styles.description}>
-          I'm a full-stack developer and a final-year B.Tech (ECE) student.
+          I'm a full-stack developer currently in my final year of B.Tech (ECE).
           I’ve built real-world web applications using modern frontend and backend tools.
           I have a solid understanding of Data Structures & Algorithms and enjoy solving problems,
           designing clean user interfaces, and building scalable systems that make a real impact.
@@ -40,5 +40,6 @@ export const Hero = () => {
     </section>
   );
 };
+
 
 
