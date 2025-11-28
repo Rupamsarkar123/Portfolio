@@ -23,7 +23,7 @@ export const Hero = () => {
           </a>
 
           <a
-            href="https://drive.google.com/file/d/1SXz7FC0MuOwhoCdjf2ReatuEPJ30CbjN/view?usp=sharing"
+            href="https://drive.google.com/file/d/1nL2Sodp3r4LU8FzqQkEdohJQr316YQ8o/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.downloadBtn}
@@ -40,3 +40,4 @@ export const Hero = () => {
     </section>
   );
 };
+
